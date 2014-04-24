@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1398302020 source:d:\documents\github\ejerciciosconmatrices\main.c
+	<stdio.h>
+	"mostrar.h"
+	"sumar.h"
+	"matrizdiag.h"
+
+1398301839 d:\documents\github\ejerciciosconmatrices\mostrar.h
+
+1398301839 d:\documents\github\ejerciciosconmatrices\sumar.h
+
+1398301839 d:\documents\github\ejerciciosconmatrices\matrizdiag.h
+
+1398302020 source:d:\documents\github\ejerciciosconmatrices\matrizdiag.c
+	"matrizdiag.h"
+
+1398301895 source:d:\documents\github\ejerciciosconmatrices\mostrar.c
+	"mostrar.h"
+
+1398301974 source:d:\documents\github\ejerciciosconmatrices\sumar.c
+	"sumar.h"
+
