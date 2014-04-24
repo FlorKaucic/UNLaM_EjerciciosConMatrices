@@ -2,7 +2,7 @@
 
 int es_matriz_diagonal(int m[COL][COL])
 {
-    return (es_seg_inf_cero(m)&&es_seg_sup_cero(m)&&(!es_diagonal_numero(m,0)));
+    return (es_seg_inf_cero(m)&&es_seg_sup_cero(m)&&diagonal_no_tiene_ceros(m));
 }
 
 int es_seg_inf_cero(int m[COL][COL])
@@ -25,11 +25,11 @@ int es_seg_sup_cero(int m[COL][COL])
     return 1;
 }
 
-int es_diagonal_numero(int m[COL][COL], int nro)
+int diagonal_no_tiene_ceros(int m[COL][COL])
 {
     int i;
     for(i=0;i<COL;i++)
-        if(m[i][i]==nro)
-            return 1;
-    return 0;
+        if(m[i][i]==0)
+            return 0;
+    return 1;
 }
