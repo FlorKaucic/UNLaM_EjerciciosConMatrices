@@ -16,8 +16,9 @@ int main()
     int mat2[COL][COL]={{1,0,0,0,0},{0,7,0,0,0},{0,0,13,0,0},{0,0,0,19,0},{0,0,0,0,25}};
     int mat3[COL][COL]={{1,0,0,0,0},{0,1,0,0,0},{0,0,1,0,0},{0,0,0,1,0},{0,0,0,0,1}};
     int mat4[COL][COL]={{1,3,0,7,15},{3,11,12,7,0},{0,12,4,3,4},{7,7,3,0,6},{15,0,4,6,5}};
-    int mat5[FIL][COL]={{19,2,13,42,5},{1,32,10,29,15},{27,2,32,0,8}};
+    int mat5[FIL][COL]={{4,2,0,-2,1},{1,-2,0,3,6},{1,2,-3,5,-1}};
     int mat6[COL][FIL];
+    int mat7[FIL][FIL] = {0};
 
     mostrar_diag_ppal(mat1);
     mostrar_diag_sec(mat1);
@@ -85,8 +86,17 @@ int main()
             else
                 printf("\nNO es matriz identidad.\nNO es matriz diagonal.\nNO es matriz simetrica.");
 
-    printf("\n\nTrasponer matriz no cuadrada:");
+    printf("\n\nTrasponer una matriz cuadrada:\n\nOriginal:");
+    mostrar_matriz_entera(mat1);
+    trasponer_matriz_cuadrada(mat1);
+    printf("\n\nTraspuesta:");
+    mostrar_matriz_entera(mat1);
+
+    printf("\n\nTrasponer una matriz no cuadrada:");
     mostrar_matrices_no_cuadradas(mat5,mat6);
+
+    printf("\n\nMultiplicar matrices:");
+    multiplicar_y_mostrar_matriz(mat5, mat6, mat7);
 
     return 0;
 }
