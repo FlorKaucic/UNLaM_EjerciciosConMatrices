@@ -9,10 +9,9 @@ int es_diagonal_uno(int [COL][COL]);
 
 /*
 
-Las declaro como comment porque estan tambien en matrizdiag.h del Ej31
+La declaro como comment porque esta tambien en matrizdiag.h del Ej31
 
-int es_seg_inf_cero(int [COL][COL]);
-int es_seg_sup_cero(int [COL][COL]);
+int son_segmentos_cero(int [COL][COL]);
 */
 
 #endif // MATRIZID_H_INCLUDED
