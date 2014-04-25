@@ -4,67 +4,83 @@
 #include "sumar.h"
 #include "matrizdiag.h"
 #include "matrizid.h"
+#include "matrizsimetrica.h"
 
 #define COL 5
 
 int main()
 {
-    int mat[COL][COL]={{1,2,3,4,5},{6,7,8,9,10},{11,12,13,14,15},{16,17,18,19,20},{21,22,23,24,25}};
+    int mat1[COL][COL]={{1,2,3,4,5},{6,7,8,9,10},{11,12,13,14,15},{16,17,18,19,20},{21,22,23,24,25}};
     int mat2[COL][COL]={{1,0,0,0,0},{0,7,0,0,0},{0,0,13,0,0},{0,0,0,19,0},{0,0,0,0,25}};
     int mat3[COL][COL]={{1,0,0,0,0},{0,1,0,0,0},{0,0,1,0,0},{0,0,0,1,0},{0,0,0,0,1}};
+    int mat4[COL][COL]={{1,3,0,7,15},{3,11,12,7,0},{0,12,4,3,4},{7,7,3,0,6},{15,0,4,6,5}};
 
+    mostrar_diag_ppal(mat1);
+    mostrar_diag_sec(mat1);
+    mostrar_t1(mat1);
+    mostrar_t2(mat1);
+    mostrar_t3(mat1);
+    mostrar_t4(mat1);
+    mostrar_seg_inf(mat1);
+    mostrar_seg_sup(mat1);
 
+    printf("\n\n\nSuma de diagonal principal: %d",sumar_diag_ppal(mat1));
+    printf("\nSuma de diagonal secundaria: %d",sumar_diag_sec(mat1));
+    printf("\nSuma de triangulo superior: %d",sumar_t1(mat1));
+    printf("\nSuma de triangulo izquierdo: %d",sumar_t2(mat1));
+    printf("\nSuma de triangulo inferior: %d",sumar_t3(mat1));
+    printf("\nSuma de triangulo derecho: %d",sumar_t4(mat1));
+    printf("\nSuma de segmento inferior: %d",sumar_seg_inf(mat1));
+    printf("\nSuma de segmento superior: %d",sumar_seg_sup(mat1));
 
-    mostrar_diag_ppal(mat);
-    mostrar_diag_sec(mat);
-    mostrar_t1(mat);
-    mostrar_t2(mat);
-    mostrar_t3(mat);
-    mostrar_t4(mat);
-    mostrar_seg_inf(mat);
-    mostrar_seg_sup(mat);
-
-    printf("\n\n\nSuma de diagonal principal: %d",sumar_diag_ppal(mat));
-    printf("\nSuma de diagonal secundaria: %d",sumar_diag_sec(mat));
-    printf("\nSuma de triangulo superior: %d",sumar_t1(mat));
-    printf("\nSuma de triangulo izquierdo: %d",sumar_t2(mat));
-    printf("\nSuma de triangulo inferior: %d",sumar_t3(mat));
-    printf("\nSuma de triangulo derecho: %d",sumar_t4(mat));
-    printf("\nSuma de segmento inferior: %d",sumar_seg_inf(mat));
-    printf("\nSuma de segmento superior: %d",sumar_seg_sup(mat));
-
-    printf("\n\nMat:");
-    if(es_matriz_id(mat))
-        printf("\nEs matriz identidad.");
+    printf("\n\nMat1:");
+    if(es_matriz_id(mat1))
+        printf("\nEs matriz identidad.\nEs matriz diagonal.\nEs matriz simetrica.");
     else
-        printf("\nNO es matriz identidad.");
-
-    if(es_matriz_diagonal(mat))
-        printf("\nEs matriz diagonal.");
-    else
-        printf("\nNO es matriz diagonal.");
+        if(es_matriz_diagonal(mat1))
+            printf("\nNO es matriz identidad.\nEs matriz diagonal.\nEs matriz simetrica.");
+        else
+            if(es_matriz_simetrica(mat1))
+                printf("\nNO es matriz identidad.\nNO es matriz diagonal.\nEs matriz simetrica.");
+            else
+                printf("\nNO es matriz identidad.\nNO es matriz diagonal.\nNO es matriz simetrica.");
 
     printf("\n\nMat2:");
     if(es_matriz_id(mat2))
-        printf("\nEs matriz identidad.");
+        printf("\nEs matriz identidad.\nEs matriz diagonal.\nEs matriz simetrica.");
     else
-        printf("\nNO es matriz identidad.");
-
-    if(es_matriz_diagonal(mat2))
-        printf("\nEs matriz diagonal.");
-    else
-        printf("\nNO es matriz diagonal.");
+        if(es_matriz_diagonal(mat2))
+            printf("\nNO es matriz identidad.\nEs matriz diagonal.\nEs matriz simetrica.");
+        else
+            if(es_matriz_simetrica(mat2))
+                printf("\nNO es matriz identidad.\nNO es matriz diagonal.\nEs matriz simetrica.");
+            else
+                printf("\nNO es matriz identidad.\nNO es matriz diagonal.\nNO es matriz simetrica.");
 
     printf("\n\nMat3:");
     if(es_matriz_id(mat3))
-        printf("\nEs matriz identidad.");
+        printf("\nEs matriz identidad.\nEs matriz diagonal.\nEs matriz simetrica.");
     else
-        printf("\nNO es matriz identidad.");
+        if(es_matriz_diagonal(mat3))
+            printf("\nNO es matriz identidad.\nEs matriz diagonal.\nEs matriz simetrica.");
+        else
+            if(es_matriz_simetrica(mat3))
+                printf("\nNO es matriz identidad.\nNO es matriz diagonal.\nEs matriz simetrica.");
+            else
+                printf("\nNO es matriz identidad.\nNO es matriz diagonal.\nNO es matriz simetrica.");
 
-    if(es_matriz_diagonal(mat3))
-        printf("\nEs matriz diagonal.");
+    printf("\n\nMat4:");
+    if(es_matriz_id(mat4))
+        printf("\nEs matriz identidad.\nEs matriz diagonal.\nEs matriz simetrica.");
     else
-        printf("\nNO es matriz diagonal.");
+        if(es_matriz_diagonal(mat4))
+            printf("\nNO es matriz identidad.\nEs matriz diagonal.\nEs matriz simetrica.");
+        else
+            if(es_matriz_simetrica(mat4))
+                printf("\nNO es matriz identidad.\nNO es matriz diagonal.\nEs matriz simetrica.");
+            else
+                printf("\nNO es matriz identidad.\nNO es matriz diagonal.\nNO es matriz simetrica.");
+
 
     return 0;
 }

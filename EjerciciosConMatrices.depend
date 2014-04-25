@@ -1,10 +1,11 @@
 # depslib dependency file v1.0
-1398350880 source:d:\documents\github\ejerciciosconmatrices\main.c
+1398383922 source:d:\documents\github\ejerciciosconmatrices\main.c
 	<stdio.h>
 	"mostrar.h"
 	"sumar.h"
 	"matrizdiag.h"
 	"matrizid.h"
+	"matrizsimetrica.h"
 
 1398301839 d:\documents\github\ejerciciosconmatrices\mostrar.h
 
@@ -12,7 +13,7 @@
 
 1398351721 d:\documents\github\ejerciciosconmatrices\matrizdiag.h
 
-1398351591 source:d:\documents\github\ejerciciosconmatrices\matrizdiag.c
+1398351721 source:d:\documents\github\ejerciciosconmatrices\matrizdiag.c
 	"matrizdiag.h"
 
 1398301895 source:d:\documents\github\ejerciciosconmatrices\mostrar.c
@@ -26,4 +27,9 @@
 1398351665 source:d:\documents\github\ejerciciosconmatrices\matrizid.c
 	"matrizid.h"
 	"matrizdiag.h"
+
+1398383844 d:\documents\github\ejerciciosconmatrices\matrizsimetrica.h
+
+1398383952 source:d:\documents\github\ejerciciosconmatrices\matrizsimetrica.c
+	"matrizsimetrica.h"
 
