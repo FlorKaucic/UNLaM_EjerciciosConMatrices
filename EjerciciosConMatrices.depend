@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1398386278 source:d:\documents\github\ejerciciosconmatrices\main.c
+1398393782 source:d:\documents\github\ejerciciosconmatrices\main.c
 	<stdio.h>
 	"mostrar.h"
 	"sumar.h"
@@ -34,5 +34,5 @@
 1398383952 source:d:\documents\github\ejerciciosconmatrices\matrizsimetrica.c
 	"matrizsimetrica.h"
 
-1398385953 d:\documents\github\ejerciciosconmatrices\trasponermatriz.h
+1398393770 d:\documents\github\ejerciciosconmatrices\trasponermatriz.h
 
