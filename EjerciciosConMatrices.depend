@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1398399715 source:d:\documents\github\ejerciciosconmatrices\main.c
+1398430879 source:d:\documents\github\ejerciciosconmatrices\main.c
 	<stdio.h>
 	"mostrar.h"
 	"sumar.h"
@@ -7,6 +7,7 @@
 	"matrizid.h"
 	"matrizsimetrica.h"
 	"trasponermatriz.h"
+	"sumarvecinos.h"
 
 1398301839 d:\documents\github\ejerciciosconmatrices\mostrar.h
 
@@ -43,4 +44,9 @@
 	"multiplicarmatriz.h"
 
 1398399160 d:\documents\github\ejerciciosconmatrices\multiplicarmatriz.h
+
+1398429665 d:\documents\github\ejerciciosconmatrices\sumarvecinos.h
+
+1398432125 source:d:\documents\github\ejerciciosconmatrices\sumarvecinos.c
+	"sumarvecinos.h"
 

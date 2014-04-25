@@ -6,9 +6,14 @@
 #include "matrizid.h"
 #include "matrizsimetrica.h"
 #include "trasponermatriz.h"
+#include "sumarvecinos.h"
 
 #define COL 5
 #define FIL 3
+
+// Juegos de prueba probados {0,0},{1,2},{1,3},{2,4}
+#define PFIL 1
+#define PCOL 3
 
 int main()
 {
@@ -97,6 +102,8 @@ int main()
 
     printf("\n\nMultiplicar matrices:");
     multiplicar_y_mostrar_matriz(mat5, mat6, mat7);
+
+    printf("\n\n\nSuma de vecinos de la posicion (%d,%d): %d",PFIL,PCOL,sumar_vecinos(mat5,PFIL,PCOL));
 
     return 0;
 }
