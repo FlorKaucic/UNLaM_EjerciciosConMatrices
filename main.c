@@ -5,6 +5,7 @@
 #include "matrizdiag.h"
 #include "matrizid.h"
 #include "matrizsimetrica.h"
+#include "trasponermatriz.h"
 
 #define COL 5
 
@@ -81,6 +82,12 @@ int main()
             else
                 printf("\nNO es matriz identidad.\nNO es matriz diagonal.\nNO es matriz simetrica.");
 
+    printf("\n\nMatriz original:");
+    mostrar_matriz_entera(mat1);
+
+    trasponer_matriz(mat1);
+    printf("\n\nTraspuesta:");
+    mostrar_matriz_entera(mat1);
 
     return 0;
 }
