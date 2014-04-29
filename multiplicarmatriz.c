@@ -10,7 +10,9 @@ void multiplicar_y_mostrar_matriz(int m1[FIL][COL], int m2[COL][FIL], int mres[F
         {
             for(k=0;k<COL;k++)
                 mres[i][j]+=(m1[i][k]*m2[k][j]);
-            printf("%d\t",mres[i][j]);
+            //printf("%d\t",mres[i][j]);
+            /* si la función calcula el producto de matrices NO DEBE mostrar el resultado
+            */
         }
     }
 }
